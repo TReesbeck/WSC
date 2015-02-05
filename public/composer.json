@@ -1,0 +1,35 @@
+{
+	"repositories": [
+        {
+            "type": "composer",
+            "url": "http://wpackagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "wordpress",
+                "type": "webroot",
+                "version": "4.1",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/WordPress/WordPress/archive/4.1.zip"
+                },
+                "require" : {
+                    "fancyguy/webroot-installer": "1.0.0"
+                }
+            }
+        }
+    ],
+	"require": {
+		"wordpress": "4.*",
+		"fancyguy/webroot-installer": "1.0.0",
+        "fancyguy/wordpress-monolog": "dev-master",
+        "wpackagist-plugin/akismet": "dev-trunk",
+        "wpackagist-plugin/captcha": ">=3.9",
+        "wpackagist-theme/hueman": "*"
+	},
+	"extra": {
+        "webroot-dir": "wp",
+        "webroot-package": "wordpress"
+    }
+}

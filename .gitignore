@@ -1,0 +1,7 @@
+public/wp
+public/wp-content/plugins
+public/wp-content/themes
+vendor
+composer.lock
+composer.phar
+.DS_Store
